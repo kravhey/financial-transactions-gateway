@@ -1,4 +1,4 @@
-package io.kadmos.financialtransactionsgatewau;
+package io.kadmos.financialtransactionsgateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
