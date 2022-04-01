@@ -2,4 +2,3 @@ rootProject.name = 'financial-transactions-gateway'
 include 'financial-service-a'
 include 'financial-service-b'
 include 'financial-database-service'
-

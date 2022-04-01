@@ -1,3 +1,5 @@
+package io.kadmos.db.application;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.gateway.route.RouteLocator;
@@ -9,7 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 //https://www.notion.so/kadmos/Case-Study-Backend-Engineering-e20c314a99f1451bbdea8100c7942679
 
 @SpringBootApplication
-@ComponentScan(basePackages = "io.kadmos.financialtransactionsgateway.controllers")
+@ComponentScan(basePackages = "io.kadmos.controllers")
 public class ServiceBSprintBootApplication {
 
     public static void main(String[] args) {
@@ -20,7 +22,7 @@ public class ServiceBSprintBootApplication {
     public RouteLocator myRoutes(RouteLocatorBuilder builder) {
         return builder
                 .routes()
-                .route(p -> p.path("/savings/a/balance").filters(f -> f.rewritePath("/savings/a/balance", "/balance")).uri("http://localhost:8080")).build();
+                .build();
     }
 
 }
