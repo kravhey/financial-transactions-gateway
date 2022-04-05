@@ -50,7 +50,7 @@ Please note, that the file is autorotated according to the parameters set in `sr
 
 `financial-service-b` the app needs to be running on port 8082
 
-##Timeouts
+## Timeouts
 
 The gateway imposes 5 seconds timeout on all requests and returns `504`. 
 
