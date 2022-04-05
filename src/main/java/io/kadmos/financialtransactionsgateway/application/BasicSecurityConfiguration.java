@@ -18,7 +18,7 @@ public class BasicSecurityConfiguration {
     private static final Logger logger = LoggerFactory.getLogger(BasicSecurityConfiguration.class);
 
     @Bean
-    public SecurityWebFilterChain securitygWebFilterChain(
+    public SecurityWebFilterChain securityWebFilterChain(
             ServerHttpSecurity http) {
         return http.authorizeExchange()
                 .anyExchange().authenticated()
@@ -29,7 +29,6 @@ public class BasicSecurityConfiguration {
     public MapReactiveUserDetailsService userDetailsService() {
         UserDetails user = User
                 .withUsername("kadmos")
-                //?5shF@YKsMjfQ+p$8t=tZkY*k7Tm7wCdycryw5?7s$26+36+JC
                 .password("$2a$10$ifdY6c4OpoBzsTQ/U0f8MuMqY9Rka0CHTPXZBNGZuTi8EleE41YLm")
                 .roles("USER")
                 .build();
