@@ -22,8 +22,8 @@ import java.time.Duration;
 
 //https://www.notion.so/kadmos/Case-Study-Backend-Engineering-e20c314a99f1451bbdea8100c7942679
 
-@SpringBootApplication
-@ComponentScan(basePackages = "io.kadmos.financialtransactionsgateway.controllers")
+@SpringBootApplication()
+@ComponentScan(basePackages = "io.kadmos.financialtransactionsgateway.application")
 public class FinancialTransactionsGatewayApplication {
 
     final Logger logger = LoggerFactory.getLogger(FinancialTransactionsGatewayApplication.class);

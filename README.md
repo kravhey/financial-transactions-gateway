@@ -5,6 +5,12 @@ Requirements: https://www.notion.so/kadmos/Case-Study-Backend-Engineering-e20c31
 ## Application overview
 
 
+## Security
+
+Application is secured with plan username/password (for the sake of exercise, )
+In order to access the service, make sure to include the following header:
+
+`Authorization: Basic a2FkbW9zOj81c2hGQFlLc01qZlErcCQ4dD10WmtZKms3VG03d0NkeWNyeXc1PzdzJDI2KzM2K0pD`
 
 ## Modules
 The project contains 4 modules.

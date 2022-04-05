@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-
-import java.util.concurrent.CountDownLatch;
 import java.util.function.Supplier;
 
 @RestController
@@ -24,7 +22,6 @@ public class ServiceAController {
 
     @GetMapping("/balance")
     public BalanceBean postBalgetBalanceance() throws Throwable {
-        new CountDownLatch(1).await();
         return balanceRepository.findById("a").orElseThrow((Supplier<Throwable>) () -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cannot find balance"));
     }
 
