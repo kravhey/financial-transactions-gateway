@@ -3,7 +3,7 @@
 Requirements: https://www.notion.so/kadmos/Case-Study-Backend-Engineering-e20c314a99f1451bbdea8100c7942679
 
 ## Application overview
-The application is a Spring Boot application with  
+The application is a Spring Boot application with Sprint Cloud enabled. It is secured with plain username password.
 
 ## Security
 
@@ -50,6 +50,9 @@ Please note, that the file is autorotated according to the parameters set in `sr
 
 `financial-service-b` the app needs to be running on port 8082
 
+## Testing
+You can find a Postman collection at `postman` folder.
+
 ## Timeouts
 
 The gateway imposes 5 seconds timeout on all requests and returns `504`. 
@@ -68,7 +71,7 @@ Sample response:
 **Q: How to scale your API gateway?**
 
 A: Since the application is dockerized, 
-we can use AWS EKS to automatically increase number of running pods.
+we can use AWS EKS to automatically increase number of running pods or scal manually if needed.
 
 
 **Q: How to monitor uptime so you can sleep at night?**
