@@ -3,7 +3,7 @@
 Requirements: https://www.notion.so/kadmos/Case-Study-Backend-Engineering-e20c314a99f1451bbdea8100c7942679
 
 ## Application overview
-
+The application is a Spring Boot application with  
 
 ## Security
 

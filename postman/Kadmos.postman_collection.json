@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "2d4a13bf-4f0f-4dd6-b1fd-d9284f549c02",
+		"name": "Kadmos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "B_balance_POST",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "?5shF@YKsMjfQ+p$8t=tZkY*k7Tm7wCdycryw5?7s$26+36+JC",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kadmos",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"amount\" : 20}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/savings/b/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"savings",
+						"b",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "B_balance_GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "?5shF@YKsMjfQ+p$8t=tZkY*k7Tm7wCdycryw5?7s$26+36+JC",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kadmos",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/savings/b/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"savings",
+						"b",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A_balance_POST",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "?5shF@YKsMjfQ+p$8t=tZkY*k7Tm7wCdycryw5?7s$26+36+JC",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kadmos",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"amount\" : 50}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/savings/a/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"savings",
+						"a",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A_balance_GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "?5shF@YKsMjfQ+p$8t=tZkY*k7Tm7wCdycryw5?7s$26+36+JC",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "kadmos",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/savings/a/balance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"savings",
+						"a",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

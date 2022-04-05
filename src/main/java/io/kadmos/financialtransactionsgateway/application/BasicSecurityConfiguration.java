@@ -22,7 +22,7 @@ public class BasicSecurityConfiguration {
             ServerHttpSecurity http) {
         return http.authorizeExchange()
                 .anyExchange().authenticated()
-                .and().httpBasic().and().build();
+                .and().httpBasic().and().csrf().disable().build();
     }
 
     @Bean
