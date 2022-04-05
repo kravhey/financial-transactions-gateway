@@ -1,0 +1,1 @@
+../gradlew bootJar && docker build -t io-kadmos/financial-service-b .

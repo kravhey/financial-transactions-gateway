@@ -1,1 +1,0 @@
-docker run -e POSTGRES_PASSWORD=mysecretpassword -p 12345:5432 -d postgres
